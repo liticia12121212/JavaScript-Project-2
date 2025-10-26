@@ -1,0 +1,18 @@
+
+function reverseString(str) {
+    return str.split('').reverse().join('');
+}
+
+function countCharacters(str) {
+    return str.length;
+}
+
+function capitalizeWords(str) {
+    return str
+        .split(' ')
+        .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+        .join(' ');
+}
+console.log(reverseString("hello")); 
+console.log(countCharacters("hello")); 
+console.log(capitalizeWords("hello world")); 
